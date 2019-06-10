@@ -1,0 +1,17 @@
+.nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-shadow: 2px 10px 9px 8px rgba(239, 240, 247, 1);
+  -moz-box-shadow: 2px 10px 9px 8px rgba(239, 240, 247, 1);
+  box-shadow: 2px 10px 9px 5px rgba(239, 240, 247, 1);
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.theme_toogle {
+  cursor: pointer;
+}

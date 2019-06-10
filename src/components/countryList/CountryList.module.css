@@ -1,0 +1,41 @@
+.list_container {
+  padding: 50px 20px;
+}
+
+.filters {
+  display: grid;
+}
+
+.list {
+  margin-top: 30px;
+  padding: 0 30px;
+}
+
+.country_card {
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
+}
+
+.country_card::hover {
+  transform: scale(1.05);
+}
+
+.country_card img {
+  width: 100%;
+  display: block;
+}
+
+.info {
+  padding: 20px 20px 30px;
+}
+
+.info p {
+  margin-bottom: 10px;
+}
+
+.country_name {
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 20px;
+}

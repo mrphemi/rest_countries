@@ -1,4 +1,17 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300i,600,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(200, 15%, 8%);
 }

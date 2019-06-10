@@ -1,0 +1,24 @@
+.filter {
+  margin-top: 30px;
+}
+
+select {
+  display: block;
+  width: 50%;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  padding: 15px 10px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  outline: none;
+  /* Firefox */
+  -moz-appearance: none;
+  /* Safari and Chrome */
+  -webkit-appearance: none;
+  appearance: none;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png)
+    no-repeat right #fff;
+  background-position-x: 95%;
+}

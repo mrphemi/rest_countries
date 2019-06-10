@@ -1,0 +1,15 @@
+.search {
+  position: relative;
+}
+
+.search input {
+  padding: 15px 10px;
+  font-family: "Nunito Sans", sans-serif;
+  width: 90%;
+  margin: auto;
+  border: none;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  outline: none;
+  font-size: 16px;
+}
