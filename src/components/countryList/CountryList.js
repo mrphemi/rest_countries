@@ -14,12 +14,12 @@ const CountryList = () => {
 
   useEffect(() => {
     fetchCountries();
-  }, [countries]);
+  }, []);
 
   return (
     <div className={styles.list_container}>
       <div className={styles.filters}>
-        <Search setTerm={setSearchTerm} />
+        <Search setSearchTerm={setSearchTerm} />
         <Filter />
       </div>
       <div className={styles.list}>

@@ -1,10 +1,21 @@
 .country_details {
   padding: 50px 50px;
+  min-height: calc(100vh - 72px);
 }
 
 .back {
   color: inherit;
-  background-color: #fff;
+  background-color: inherit;
+  padding: 5px 15px;
+  display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.back_dark {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
   padding: 5px 15px;
   display: inline-block;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
@@ -25,6 +36,7 @@ ion-icon {
 
 img {
   width: 100%;
+  display: block;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
 }
 
@@ -46,6 +58,45 @@ p {
   padding: 5px 15px;
   margin-right: 10px;
   margin-top: 20px;
-  background-color: #fff;
+  background-color: inherit;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
+}
+
+.border_dark {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  padding: 5px 15px;
+  margin-right: 10px;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
+}
+
+@media screen and (min-width: 1024px) {
+  .details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+  h2 {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .country_details {
+    padding: 50px 50px 0;
+    height: calc(100vh - 72px);
+  }
+  .info_group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+  }
+  .extra_info {
+    margin-top: 0;
+  }
+  .flag {
+    width: 80%;
+  }
 }

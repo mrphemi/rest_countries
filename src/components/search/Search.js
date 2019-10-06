@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { GlobalContext } from "../context/GlobalState";
 
 import styles from "./Search.module.css";
 
-const Search = ({ setTerm }) => {
+const Search = ({ setSearchTerm }) => {
+  const { theme } = useContext(GlobalContext);
   const onUserInput = e => {
-    setTerm(e.target.value);
+    setSearchTerm(e.target.value);
   };
   return (
     <div className={styles.search}>
@@ -12,6 +14,7 @@ const Search = ({ setTerm }) => {
         type="text"
         onChange={onUserInput}
         placeholder="Search for a country..."
+        className={theme === "Light" ? "" : styles.dark}
       />
     </div>
   );

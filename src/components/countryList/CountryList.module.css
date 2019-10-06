@@ -3,8 +3,8 @@
 }
 
 .filters {
-  display: grid;
-}
+    padding: 0 30px;
+  }
 
 .list {
   margin-top: 30px;
@@ -38,4 +38,25 @@
   font-weight: 800;
   font-size: 18px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .filters {
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 0 30px;
+  }
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 40px;
+    grid-auto-rows: auto;
+  }
 }

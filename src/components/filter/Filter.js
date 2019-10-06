@@ -1,26 +1,26 @@
 import React, { useContext } from "react";
-
 import { GlobalContext } from "../context/GlobalState";
 
 import styles from "./Filter.module.css";
 
 const Search = () => {
-  const { filterByRegion, fetchCountries } = useContext(GlobalContext);
-
+  const { filterByRegion, fetchCountries, theme } = useContext(GlobalContext);
   const onUserInput = e => {
     let value = e.target.value;
-    if (value === "") {
+    if (!value) {
       fetchCountries();
+    } else {
+      filterByRegion(value);
     }
-    filterByRegion(value);
   };
 
   return (
     <div className={styles.filter}>
-      <select defaultValue onChange={onUserInput}>
-        <option value disabled>
-          Filter by Region
-        </option>
+      <select
+        onChange={onUserInput}
+        className={theme === "Light" ? "" : styles.dark}
+      >
+        <option disabled>Filter by Region</option>
         <option value="">All</option>
         <option value="africa">Africa</option>
         <option value="americas">Americas</option>

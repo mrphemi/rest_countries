@@ -18,7 +18,7 @@ const Nav = () => {
   };
 
   return (
-    <div className={styles.nav}>
+    <div className={theme === "Light" ? styles.nav : styles.nav_dark}>
       <Link to="/" className={styles.logo}>
         Where in the world?
       </Link>
