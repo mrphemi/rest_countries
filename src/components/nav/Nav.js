@@ -18,15 +18,15 @@ const Nav = () => {
   };
 
   return (
-    <div className={theme === "Light" ? styles.nav : styles.nav_dark}>
+    <nav className={theme === "Light" ? styles.nav : styles.nav_dark}>
       <Link to="/" className={styles.logo}>
         Where in the world?
       </Link>
       <p onClick={toggleTheme} className={styles.theme_toogle}>
         <ion-icon name="moon" />
-        {theme}
+        {theme === "Light" ? "Dark Mode" : "Light Mode"}
       </p>
-    </div>
+    </nav>
   );
 };
 

@@ -1,17 +1,27 @@
 .filter {
-  margin-top: 30px;
+  margin-top: 3rem;
+  width: 50%;
+  position: relative;
+}
+
+.filter ion-icon {
+  position: absolute;
+  top: 50%;
+  right: 0.2rem;
+  font-size: 2rem;
+  margin-top: -1rem;
 }
 
 select {
   display: block;
-  width: 50%;
+  width: 100%;
   background-color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
-  padding: 15px 10px;
+  padding: 1.5rem 1rem;
   font-family: "Nunito Sans", sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   outline: none;
   /* Firefox */
   -moz-appearance: none;
@@ -21,15 +31,6 @@ select {
 }
 
 select.dark {
-   display: block;
-  width: 50%;
-  background-color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 15px 10px;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 16px;
-  outline: none;
   background-color: hsl(209, 23%, 22%);
   color: hsl(0, 0%, 100%);
 }
@@ -37,11 +38,13 @@ select.dark {
 @media screen and (min-width: 768px) {
   .filter {
     margin-top: 0;
-    flex-basis: 15%;
+    flex-basis: 20%;
     margin-left: auto;
+    width: 100%;
   }
 
-  select, select.dark {
+  select,
+  select.dark {
     width: 100%;
   }
 }

@@ -1,37 +1,37 @@
 .country_details {
-  padding: 50px 50px;
-  min-height: calc(100vh - 72px);
+  padding: 5rem 5rem;
+  min-height: calc(100vh - 7.2rem);
 }
 
 .back {
   color: inherit;
   background-color: inherit;
-  padding: 5px 15px;
+  padding: 0.5rem 1.5rem;
   display: inline-block;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
   border: none;
-  border-radius: 4px;
+  border-radius: 0.4rem;
 }
 
 .back_dark {
   background-color: hsl(209, 23%, 22%);
   color: hsl(0, 0%, 100%);
-  padding: 5px 15px;
+  padding: 0.5rem 1.5rem;
   display: inline-block;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
   border: none;
-  border-radius: 4px;
+  border-radius: 0.4rem;
 }
 
 ion-icon {
-  font-size: 16px;
-  margin-right: 10px;
-  margin-top: -5px;
+  font-size: 1.6rem;
+  margin-right: 1rem;
+  margin-top: -0.5rem;
   vertical-align: middle;
 }
 
 .details {
-  margin-top: 50px;
+  margin-top: 5rem;
 }
 
 img {
@@ -41,23 +41,29 @@ img {
 }
 
 h2 {
-  margin: 30px 0;
+  margin: 3rem 0;
+  font-size: 2.2rem;
 }
 
 p {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+a {
+  font-size: 1.6rem;
 }
 
 .extra_info,
 .borders {
-  margin-top: 30px;
+  margin-top: 3rem;
 }
 
 .border {
   display: inline-block;
-  padding: 5px 15px;
-  margin-right: 10px;
-  margin-top: 20px;
+  padding: 0.5rem 1.5rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
   background-color: inherit;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
 }
@@ -66,9 +72,9 @@ p {
   background-color: hsl(209, 23%, 22%);
   color: hsl(0, 0%, 100%);
   display: inline-block;
-  padding: 5px 15px;
-  margin-right: 10px;
-  margin-top: 20px;
+  padding: 0.5rem 1.5rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
 }
 
@@ -76,7 +82,7 @@ p {
   .details {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 30px;
+    grid-column-gap: 3rem;
   }
   h2 {
     margin-top: 0;
@@ -85,13 +91,13 @@ p {
 
 @media screen and (min-width: 1280px) {
   .country_details {
-    padding: 50px 50px 0;
-    height: calc(100vh - 72px);
+    padding: 5rem 5rem 0;
+    height: calc(100vh - 7.2rem);
   }
   .info_group {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
+    grid-column-gap: 2rem;
   }
   .extra_info {
     margin-top: 0;

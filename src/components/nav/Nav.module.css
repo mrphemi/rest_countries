@@ -1,22 +1,22 @@
-.nav {
-  padding: 20px;
+nav {
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
+}
+
+.nav {
   -webkit-box-shadow: 2px 10px 9px 8px rgba(239, 240, 247, 1);
   -moz-box-shadow: 2px 10px 9px 8px rgba(239, 240, 247, 1);
   box-shadow: 2px 10px 9px 5px rgba(239, 240, 247, 1);
 }
 
 .nav_dark {
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
   background-color: hsl(209, 23%, 22%);
 }
 
 .logo {
   font-weight: 800;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .theme_toogle {

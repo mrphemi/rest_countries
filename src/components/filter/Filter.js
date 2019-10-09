@@ -28,6 +28,7 @@ const Search = () => {
         <option value="europe">Europe</option>
         <option value="oceania">Oceania</option>
       </select>
+      <ion-icon name="arrow-dropdown" />
     </div>
   );
 };

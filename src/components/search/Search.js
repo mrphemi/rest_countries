@@ -10,6 +10,7 @@ const Search = ({ setSearchTerm }) => {
   };
   return (
     <div className={styles.search}>
+      <ion-icon name="search" />
       <input
         type="text"
         onChange={onUserInput}

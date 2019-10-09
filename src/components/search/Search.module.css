@@ -2,31 +2,35 @@
   position: relative;
 }
 
+.search ion-icon {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  font-size: 2rem;
+  margin-top: -0.9rem;
+  vertical-align: middle;
+}
+
 .search input {
-  position: relative;
-  padding: 15px 10px;
+  display: block;
+  padding: 1.5rem 0.5rem 1.5rem 3.5rem;
   font-family: "Nunito Sans", sans-serif;
   width: 90%;
   margin: auto;
   border: none;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
   outline: none;
-  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+.search input::placeholder {
+  padding-left: 1.5rem;
 }
 
 .search input.dark {
-  padding: 15px 10px;
-  font-family: "Nunito Sans", sans-serif;
-  width: 90%;
-  margin: auto;
-  border: none;
-  border-radius: 4px;
-  outline: none;
-  font-size: 16px;
   background-color: hsl(209, 23%, 22%);
   color: hsl(0, 0%, 100%);
-  position: relative;
 }
 
 .search input.dark::placeholder {
@@ -35,10 +39,7 @@
 
 @media screen and (min-width: 768px) {
   .search {
-    flex-basis: 35%;
-  }
-  .search input,
-  .search input.dark {
+    flex-basis: 40%;
     width: 100%;
   }
 }
