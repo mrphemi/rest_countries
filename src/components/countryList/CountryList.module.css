@@ -6,10 +6,11 @@
 .list {
   margin-top: 3rem;
   padding: 0 3rem;
+  display: grid;
+  row-gap: 3rem;
 }
 
 .country_card {
-  margin-bottom: 0.3rem;
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
 }
@@ -44,9 +45,8 @@
     padding: 0 3rem;
   }
   .list {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
+    grid-gap: 4rem;
     grid-auto-rows: max-content;
   }
 }
@@ -54,6 +54,5 @@
 @media screen and (min-width: 1024px) {
   .list {
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 4rem;
   }
 }

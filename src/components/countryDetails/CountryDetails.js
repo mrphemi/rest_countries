@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 import { GlobalContext } from "../context/GlobalState";
 import BorderList from "./BorderList";
+import Info from "./Info";
+import ExtraInfo from "./ExtraInfo";
 
 import styles from "./CountryDetails.module.css";
 
@@ -13,14 +15,6 @@ const CountryDetails = ({ match }) => {
   useEffect(() => {
     fetchCountry(countryCode);
   }, [countryCode]);
-
-  const displayList = list => {
-    return list.map((item, i) => {
-      if (i === list.length - 1)
-        return <span key={item.name}>{item.name}</span>;
-      return <span key={item.name}>{item.name}, </span>;
-    });
-  };
 
   const {
     flag,
@@ -50,62 +44,10 @@ const CountryDetails = ({ match }) => {
         <div>
           {name && <h2>{name}</h2>}
           <div className={styles.info_group}>
-            <div className={styles.info}>
-              {nativeName && (
-                <p>
-                  <strong>Native Name: </strong>
-                  {nativeName}
-                </p>
-              )}
-              {population && (
-                <p>
-                  <strong>Population: </strong>
-                  {population}
-                </p>
-              )}
-              {region && (
-                <p>
-                  <strong>Region: </strong>
-                  {region}
-                </p>
-              )}
-              {subregion && (
-                <p>
-                  <strong>Sub Region: </strong>
-                  {subregion}
-                </p>
-              )}
-              {capital && (
-                <p>
-                  <strong>Capital: </strong>
-                  {capital}
-                </p>
-              )}
-            </div>
-
-            <div className={styles.extra_info}>
-              {topLevelDomain.length !== 0 && (
-                <p>
-                  <strong>Top Level Domain: </strong>
-                  {topLevelDomain.map(domain => (
-                    <span key={domain}>{domain}</span>
-                  ))}
-                </p>
-              )}
-              {currencies.length !== 0 && (
-                <p>
-                  <strong>Currencies: </strong>
-                  {displayList(currencies)}
-                </p>
-              )}
-
-              {languages.length !== 0 && (
-                <p>
-                  <strong>Languages: </strong>
-                  {displayList(languages)}
-                </p>
-              )}
-            </div>
+            <Info
+              values={{ nativeName, population, region, subregion, capital }}
+            />
+            <ExtraInfo values={{ topLevelDomain, currencies, languages }} />
           </div>
           <div className={styles.borders}>
             {borders.length !== 0 && (
