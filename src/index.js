@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import GlobalState, { GlobalContext } from "./components/context/GlobalState";
+import GlobalState, { GlobalContext } from "./context/GlobalState";
 import Nav from "./components/nav/Nav";
 import CountryList from "./components/countryList/CountryList";
 import CountryDetails from "./components/countryDetails/CountryDetails";
@@ -24,12 +24,13 @@ function App() {
   );
 }
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(
+const container = document.getElementById("app");
+const root = createRoot(container);
+
+root.render(
   <GlobalState>
     <Router>
       <App />
     </Router>
-  </GlobalState>,
-  rootElement
+  </GlobalState>
 );

@@ -1,26 +1,30 @@
 .country_details {
   padding: 5rem 5rem;
-  min-height: calc(100vh - 7.2rem);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.back,
+.back_dark {
+  padding: 0.5rem 1.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  width: 100px;
+  border: none;
+  border-radius: 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
 }
 
 .back {
   color: inherit;
   background-color: inherit;
-  padding: 0.5rem 1.5rem;
-  display: inline-block;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
-  border: none;
-  border-radius: 0.4rem;
 }
 
 .back_dark {
   background-color: hsl(209, 23%, 22%);
   color: hsl(0, 0%, 100%);
-  padding: 0.5rem 1.5rem;
-  display: inline-block;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
-  border: none;
-  border-radius: 0.4rem;
 }
 
 ion-icon {
@@ -34,18 +38,18 @@ ion-icon {
   margin-top: 5rem;
 }
 
-img {
+.country_details img {
   width: 100%;
   display: block;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
 }
 
-h2 {
+.country_details h2 {
   margin: 3rem 0;
   font-size: 2.2rem;
 }
 
-p {
+.country_details p {
   margin-bottom: 1rem;
   font-size: 1.6rem;
 }
@@ -59,49 +63,53 @@ a {
   margin-top: 3rem;
 }
 
-.border {
+.border,
+.border_dark {
   display: inline-block;
   padding: 0.5rem 1.5rem;
   margin-right: 1rem;
-  margin-top: 2rem;
-  background-color: inherit;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
+}
+
+.border {
+  margin-top: 1rem;
+  background-color: inherit;
 }
 
 .border_dark {
   background-color: hsl(209, 23%, 22%);
   color: hsl(0, 0%, 100%);
-  display: inline-block;
-  padding: 0.5rem 1.5rem;
-  margin-right: 1rem;
   margin-top: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
 }
 
 @media screen and (min-width: 1024px) {
-  .details {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 3rem;
-  }
-  h2 {
-    margin-top: 0;
+  .country_details img {
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .country_details {
     padding: 5rem 5rem 0;
-    height: calc(100vh - 7.2rem);
+    height: 100vh;
   }
+
+  .details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+
   .info_group {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 2rem;
+    column-gap: 2rem;
   }
+
   .extra_info {
     margin-top: 0;
   }
+
   .flag {
     width: 80%;
   }
